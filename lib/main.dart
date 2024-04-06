@@ -14,6 +14,7 @@ final theme = ThemeData(
     textTheme: GoogleFonts.latoTextTheme());
 void main() {
   runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
       home: const ProviderScope(child: App())));
 }
